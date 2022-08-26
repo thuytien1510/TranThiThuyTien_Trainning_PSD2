@@ -1,1 +1,0 @@
-# TranThiThuyTien_PSD2_Training_2022

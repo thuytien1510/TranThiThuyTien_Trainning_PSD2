@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gulp Browsersync</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body>
+  <header>
+    <a href=""><img src="./src/img/logo.png" alt="logo" class="logo-head"></a>
+    <ul class="nav-head">
+      <li class="nav-item"><a href="">Home</a></li>
+      <li class="nav-item"><a href="">Menu</a></li>
+      <li class="nav-item"><a href="">About Us</a></li>
+      <li class="navbar"><i class="fas fa-bars"></i></li>
+      <li class="nav-item"><a href="">Shop</a></li>
+      <li class="nav-item"><a href="">Contact</a></li>
+      <li class="nav-item">
+        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+      </li>
+    </ul>
+  </header>
+  <div class="slider">
+    <div class="slider-content">
+      <h2 class="slider-content__title">time for a <span>coffee</span></h2>
+      <p class="slider-content__desc">Lorem ipsum dolor sit amet, consectetu sit ametea
+        adipiscing elit. Suspendisse vitae massa velit, euase
+        laoreet massa. Lorem ipsum</p>
+      <button class="btn-order"><a href="">Oder Now</a></button>
+    </div>
+    <div class="dot">
+      <button onclick="dot(0)"></button>
+      <button onclick="dot(1)"></button>
+      <button onclick="dot(2)"></button>
+    </div>
+  </div>
+    <div class="service">
+      <h3 class="service__title"><span>our</span> services</h3>
+      <p class="service__desc">Aenean sodales dictum augue, in faucibus nisi sollicitudin eu. Nulla semper arcu. Nam
+        molestie sem eu quam fermentum a tempus nisi aliquet.</p>
+      <div class="service-list">
+        <div class="service-item">
+          <img src="./src/img/product_bean.avif" alt="" class="img-service">
+          <h4 class="service-item__title">bean</h4>
+          <p class="service-item__desc">Lorem ipsum doconsectetur adipiscing. Suspensse doco.</p>
+        </div>
+        <div class="service-item">
+          <img src="./src/img/product_coffee.avif" alt="" class="img-service">
+          <h4 class="service-item__title">coffee</h4>
+          <p class="service-item__desc">Lorem ipsum doconsectetur adipiscing. Suspensse doco.</p>
+        </div>
+        <div class="service-item">
+          <img src="./src/img/product_breakfast.avif" alt="" class="img-service">
+          <h4 class="service-item__title">breakfast</h4>
+          <p class="service-item__desc">Lorem ipsum doconsectetur adipiscing. Suspensse doco.</p>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="menu-left">
+        <h2 class="menu-left__title">menu</h2>
+        <div class="menu-left__service">
+          <button class="menu-left__service-btn"><a href="">Coffee Beans</a></button>
+          <button class="menu-left__service-btn"><a href="">Drinks</a></button>
+          <button class="menu-left__service-btn"><a href="">Breakfast</a></button>
+        </div>
+        <div class="menu-left-list">
+          <div class="list-item">
+            <div class="order-item">
+              <div class="order-item__left">
+                <h3 class="order__name">1/ Cappuchino</h3>
+                <p class="order__desc">Lorem ipsum Culpa in autea dolor minim irure pariaturaa</p>
+              </div>
+              <div class="order-item__right">
+                <h3 class="order__cost">$5.5</h3>
+                <p class="order__like"><i class="fa-solid fa-heart"></i>60</p>
+              </div>
+            </div>
+            <div class="order-item">
+              <div class="order-item__left">
+                <h3 class="order__name">2/ Fappuchino</h3>
+                <p class="order__desc">Lorem ipsum Culpa in autea dolor minim irure pariaturaa</p>
+              </div>
+              <div class="order-item__right">
+                <h3 class="order__cost">$6.0</h3>
+                <p class="order__like"><i class="fa-solid fa-heart"></i>80</p>
+              </div>
+            </div>
+            <div class="order-item">
+              <div class="order-item__left">
+                <h3 class="order__name">3/ Expresso</h3>
+                <p class="order__desc">Lorem ipsum Culpa in autea dolor minim irure pariaturaa</p>
+              </div>
+              <div class="order-item__right">
+                <h3 class="order__cost">$4.5</h3>
+                <p class="order__like"><i class="fa-solid fa-heart"></i>55</p>
+              </div>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="order-item">
+              <div class="order-item__left">
+                <h3 class="order__name">4/ Mocha</h3>
+                <p class="order__desc">Lorem ipsum Culpa in autea dolor minim irure pariaturaa</p>
+              </div>
+              <div class="order-item__right">
+                <h3 class="order__cost">$5.0</h3>
+                <p class="order__like"><i class="fa-solid fa-heart"></i>45</p>
+              </div>
+            </div>
+            <div class="order-item">
+              <div class="order-item__left">
+                <h3 class="order__name">5/ Cafe Latte</h3>
+                <p class="order__desc">Lorem ipsum Culpa in autea dolor minim irure pariaturaa</p>
+              </div>
+              <div class="order-item__right">
+                <h3 class="order__cost">$5.5</h3>
+                <p class="order__like"><i class="fa-solid fa-heart"></i>32</p>
+              </div>
+            </div>
+            <div class="order-item">
+              <div class="order-item__left">
+                <h3 class="order__name">6/ Machiato</h3>
+                <p class="order__desc">Lorem ipsum Culpa in autea dolor minim irure pariaturaa</p>
+              </div>
+              <div class="order-item__right">
+                <h3 class="order__cost">$6.5</h3>
+                <p class="order__like"><i class="fa-solid fa-heart"></i>78</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="" class="link-view">VIEW ALL <i class="fa-solid fa-chevron-right"></i></a>
+
+      </div>
+      <div class="menu-right">
+      </div>
+    </div>
+    <div class="special">
+      <h3 class="special__title"><span>our</span> special things</h3>
+      <p class="special__desc">Aenean sodales dictum augue, in faucibus nisi sollicitudin eu. Nulla semper arcu. Nam
+        molestie sem eu quam fermentum a tempus nisi aliquet.</p>
+      <div class="special__artical">
+        <div class="special__artical-item">
+          <div><img src="./src/img/content1.avif" alt=""></div>
+          <div class="content">
+            <h4 class="content__title">good coffee beans</h4>
+            <p class="content__desc">Lorem ipsum dolor sit amet, consec sed ac adipiscing elit. Suspendisse massa velit,
+              eu laoreet massa.
+              Sed ibero. Aenean sodales dictum augu faucibus nisi sollicitudin eu. Nula se Nam molestie sem eu </p>
+          </div>
+        </div>
+        <div class="special__artical-item">
+          <img src="./src/img/content2.avif" alt="">
+          <div class="content">
+            <h4 class="content__title">good coffee recipe</h4>
+            <p class="content__desc">Lorem ipsum dolor sit amet, consec sed ac adipiscing elit. Suspendisse massa velit,
+              eu laoreet massa.
+              Sed ibero. Aenean sodales dictum augu faucibus nisi sollicitudin eu. Nula se Nam molestie sem eu </p>
+          </div>
+        </div>
+        <div class="special__artical-item">
+          <img src="./src/img//content3.avif" alt="">
+          <div class="content">
+            <h4 class="content__title">good ingredients</h4>
+            <p class="content__desc">Lorem ipsum dolor sit amet, consec sed ac adipiscing elit. Suspendisse massa velit,
+              eu laoreet massa.
+              Sed ibero. Aenean sodales dictum augu faucibus nisi sollicitudin eu. Nula se Nam molestie sem eu </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="infor">
+      <h2 class="infor__title"><span>arabica</span> coffee beans</h2>
+      <p class="infor__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumen asperiores,
+        saepe alias dignissimos consectetur ea cum sint tenetur neque cupiditate
+        beatae optio eos. Assumen asperiores, saepe alias dignissimos.</p>
+      <button class="btn-infor"><a href="">Know More</a></button>
+    </div>
+    <div class="contact">
+      <h3 class="contact__title">contact us</h3>
+      <div class="contact-infor">
+        <div class="address">
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i>198 West 21th Street, Suite 721 New York</li>
+            <li><i class="fa-solid fa-phone-flip"></i>+(84)123456789</li>
+            <li><i class="fa-solid fa-envelope"></i>cafeinate@cofeee.org</li>
+            <li><i class="fa-solid fa-globe"></i>cafeinate@cofeee.org</li>
+          </ul>
+        </div>
+        <form action="">
+          <div class="inline">
+            <input type="text" placeholder="Name *" required>
+            <input type="email" placeholder="Email *" required>
+          </div>
+          <select name="" id="">
+            <option value="Cooperation">Cooperation</option>
+          </select>
+          <textarea type="text" class="message" placeholder="Message *" id="message"></textarea>
+          <button>Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="sub">
+      <img src="./src/img/logo-footer.png" alt="" class="logo-footer">
+      <p class="sub__desc">Maecenas vitae venenatis lorem. Pellentesque et lacinia eros, condimentum hendrerit
+        nisl. In iaculis a nunc a euismod. Phasellus aliquam sagittis congue.</p>
+      <div class="input-mail">
+        <span>SUBSCRIBE |</span><input type="mail" placeholder="Your email"><button><i
+            class="fa-solid fa-right-long"></i></button>
+      </div>
+    </div>
+    <a href="#" class="up-btn"><i class="fa-solid fa-chevron-up"></i></a>
+    <p class="copyright">Copyright ©  2010-2021 YOUR BRAND COFFEE</p>
+  <script src="/dist/js/script.js"></script>
+</body>
+</html>
